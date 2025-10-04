@@ -16,7 +16,7 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ codeString, language }) => {
     setIsCopied(true);
     setTimeout(() => {
       setIsCopied(false);
-    }, 2000); // Reset button text after 2 seconds
+    }, 2000); 
   };
 
   return (

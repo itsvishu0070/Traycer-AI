@@ -1,10 +1,10 @@
-/* CodeBlock.module.css */
+
 .codeBlockContainer {
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 1rem;
     overflow: hidden;
-    /* Important for border-radius on children */
+   
 }
 
 .header {
@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #333742;
-    /* A darker header */
+    
     padding: 0.5rem 1rem;
 }
 

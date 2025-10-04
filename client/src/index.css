@@ -1,14 +1,11 @@
-/* 1. Universal Box-Sizing Reset */
-/* This is a best practice that makes layouts much more predictable. */
-/* It ensures that padding and borders are included INSIDE an element's width and height. */
-*,
+
+
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* 2. Body and Root Reset */
-/* This removes the default browser margin that causes the white gaps. */
+
 html,
 body,
 #root {
@@ -17,7 +14,7 @@ body,
     height: 100%;
     width: 100%;
     overflow: hidden;
-    /* Prevents unwanted scrollbars on the main page */
+    
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
