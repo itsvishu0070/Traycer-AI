@@ -1,0 +1,11 @@
+[33m0e4e4e1[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Merge branch 'main' of https://github.com/itsvishu0070/Traycer
+[33m50f12d9[m Refactor: Clean up unused code and improve CSS styles for better UI consistency
+[33m4b50397[m Update Sidebar.tsx
+[33ma9ceefb[m Update Sidebar.module.css
+[33m549fbd8[m Update Header.module.css
+[33mc8cabdb[m Update ChatPanel.tsx
+[33ma281d57[m Update ChatPanel.module.css
+[33m641a868[m Update PlanCanvas.tsx
+[33mea67b5f[m Update CustomNode.tsx
+[33m7db9249[m Update CustomNode.module.css
+[33m1f3d6bf[m Initial commit - Traycer AI project
