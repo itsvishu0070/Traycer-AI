@@ -1,0 +1,137 @@
+/* .chatPanel {
+    width: 300px;
+    flex-shrink: 0;
+   
+    background: #121216;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 0px;
+}
+
+.planSteps {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1.5rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+.stepsList {
+    list-style-type: decimal;
+    padding-left: 20px;
+    color: #ccc;
+}
+
+.stepsList li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #666;
+    text-align: center;
+} */
+
+
+
+ .chatPanel {
+     width: 300px;
+     flex-shrink: 0;
+     background: linear-gradient(180deg, #0e0e12 0%, #141418 100%);
+     border-right: 1px solid rgba(255, 255, 255, 0.08);
+     box-shadow: 4px 0 12px rgba(0, 0, 0, 0.6);
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+     margin-left: 0;
+     backdrop-filter: blur(16px);
+     transition: all 0.3s ease;
+ }
+
+ .chatPanel:hover {
+     border-right: 1px solid rgba(0, 200, 255, 0.15);
+     box-shadow: 6px 0 16px rgba(0, 200, 255, 0.08);
+ }
+
+ .planSteps {
+     flex-grow: 1;
+     overflow-y: auto;
+     padding: 1.5rem 1.75rem;
+     scrollbar-width: thin;
+     scrollbar-color: rgba(0, 200, 255, 0.3) transparent;
+ }
+
+ .planSteps::-webkit-scrollbar {
+     width: 6px;
+ }
+
+ .planSteps::-webkit-scrollbar-thumb {
+     background: linear-gradient(180deg, rgba(0, 200, 255, 0.4), rgba(0, 120, 255, 0.6));
+     border-radius: 3px;
+ }
+
+ .title {
+     font-size: 1.3rem;
+     font-weight: 600;
+     color: #f2f2f2;
+     margin-bottom: 1.2rem;
+     letter-spacing: 0.3px;
+     text-shadow: 0 0 8px rgba(0, 200, 255, 0.2);
+     background: linear-gradient(90deg, #00eaff, #0078ff);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ .stepsList {
+     list-style-type: decimal;
+     padding-left: 1.2rem;
+     color: #b5b5b5;
+     font-size: 0.95rem;
+     line-height: 1.6;
+ }
+
+ .stepsList li {
+     margin-bottom: 0.9rem;
+     position: relative;
+     transition: color 0.3s ease, transform 0.2s ease;
+ }
+
+ .stepsList li:hover {
+     color: #ffffff;
+     transform: translateX(3px);
+     text-shadow: 0 0 6px rgba(0, 200, 255, 0.2);
+ }
+
+ .placeholder {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     color: #666;
+     text-align: center;
+     font-size: 0.95rem;
+     font-weight: 400;
+     letter-spacing: 0.2px;
+     transition: color 0.3s ease;
+ }
+
+ .placeholder:hover {
+     color: #00caff;
+ }
+
+.loading {
+    font-style: italic;
+    color: #888;
+    padding: 1rem 0;
+}

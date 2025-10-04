@@ -1,0 +1,109 @@
+/* .chatForm {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(18, 18, 22, 0.5);
+}
+
+.chatInput {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.sendButton {
+    background: #007cf0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sendButton:hover {
+    background: #005cb0;
+}
+
+.sendButton:disabled {
+    background: #555;
+    cursor: not-allowed;
+} */
+
+
+
+.chatForm {
+    display: flex;
+    align-items: center;
+    /* ADDED: Vertically aligns the input and button */
+    gap: 0.75rem;
+    /* ADDED: Modern way to space items, replaces margin */
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(18, 18, 22, 0.7);
+    /* CHANGED: Increased opacity slightly */
+    backdrop-filter: blur(10px);
+    /* ADDED: Glassmorphism effect */
+}
+
+.chatInput {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.75rem 1rem;
+    /* CHANGED: Balanced padding */
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    /* ADDED: Removes default browser outline on focus */
+    transition: all 0.2s ease-in-out;
+    /* ADDED: Smooth transition for focus */
+}
+
+/* ADDED: This is the biggest improvement for UX */
+.chatInput:focus {
+    border-color: #007cf0;
+    box-shadow: 0 0 15px rgba(0, 124, 240, 0.3);
+}
+
+.sendButton {
+    /* CHANGED: Switched to flex for perfect centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+    /* ADDED: Prevents the button from shrinking */
+    width: 40px;
+    /* CHANGED: Explicit width and height for a square shape */
+    height: 40px;
+    background: #007cf0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sendButton:hover {
+    background: #005cb0;
+    box-shadow: 0 0 10px rgba(0, 124, 240, 0.5);
+    /* ADDED: Glow on hover */
+    transform: translateY(-1px);
+    /* ADDED: Slight lift on hover */
+}
+
+.sendButton:disabled {
+    background: #444;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}

@@ -1,0 +1,38 @@
+/* CodeBlock.module.css */
+.codeBlockContainer {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 1rem;
+    overflow: hidden;
+    /* Important for border-radius on children */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333742;
+    /* A darker header */
+    padding: 0.5rem 1rem;
+}
+
+.language {
+    font-size: 0.875rem;
+    color: #d4d4d4;
+    text-transform: uppercase;
+}
+
+.copyButton {
+    background-color: #4a4f5c;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.2s ease;
+}
+
+.copyButton:hover {
+    background-color: #5a5f70;
+}
