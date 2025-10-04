@@ -1,75 +1,9 @@
-/* .nodeWrapper {
-    padding: 15px 20px;
-    border-radius: 10px;
-    background: rgba(30, 30, 35, 0.7);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #e0e0e0;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    min-width: 250px;
-    transition: all 0.2s ease-in-out;
-}
 
-.nodeWrapper:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-    border-color: rgba(0, 150, 255, 0.5);
-}
-
-.icon {
-    font-size: 1.5rem;
-}
-
-.label {
-    flex-grow: 1;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.statusBadge {
-    font-size: 0.7rem;
-    padding: 3px 8px;
-    border-radius: 12px;
-    font-weight: 600;
-}
-
-.pending {
-    background-color: #555;
-    color: #ccc;
-}
-
-.inprogress {
-    background-color: #e9b302;
-    color: #111;
-}
-
-.completed {
-    background-color: #1a9c57;
-    color: white;
-}
-
-.error {
-    background-color: #d42f2f;
-    color: white;
-}
-
-.handle {
-    width: 8px !important;
-    height: 8px !important;
-    background: #555 !important;
-    border: none !important;
-} */
-
-
-
-/* --- Base Node Styling --- */
 .nodeWrapper {
     padding: 15px 20px;
     border-radius: 10px;
     background: rgba(30, 30, 35, 0.8);
-    /* Slightly more opaque */
+
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #e0e0e0;
@@ -77,18 +11,18 @@
     align-items: center;
     gap: 15px;
     min-width: 280px;
-    /* Slightly wider */
+   
     transition: all 0.2s ease-in-out;
     position: relative;
-    /* Needed for the selected glow pseudo-element */
+   
     border-left-width: 4px;
-    /* Space for the status indicator */
+    
     position: relative;
-        /* IMPORTANT: Add this for positioning the step number */
+       
         border-left-width: 4px;
 }
 
-/* --- Status Indicator (Elegant colored left border) --- */
+
 .pendingNode {
     border-left-color: #555;
 }
@@ -105,7 +39,6 @@
     border-left-color: #d42f2f;
 }
 
-/* --- Interactivity: Hover & Selected States --- */
 .nodeWrapper:hover {
     transform: translateY(-2px);
     border-color: rgba(0, 150, 255, 0.6);
@@ -113,32 +46,32 @@
 }
 
 .selected {
-    /* When a node is selected, give it a prominent glow */
+  
     border-color: rgba(0, 150, 255, 0.8) !important;
     box-shadow: 0 0 20px rgba(0, 150, 255, 0.5);
 }
 
-/* --- Inner Elements: Icon & Label --- */
+
 .icon {
     font-size: 1.5rem;
     flex-shrink: 0;
-    /* Prevents icon from shrinking */
+    
 }
 
 .label {
     flex-grow: 1;
     font-size: 0.95rem;
-    /* Slightly larger for readability */
+   
     font-weight: 500;
     color: #f0f0f0;
-    /* Brighter text */
+ 
 }
 
-/* --- Refined Status Badges --- */
+
 .statusBadge {
     font-size: 0.7rem;
     padding: 4px 10px;
-    /* More balanced padding */
+    
     border-radius: 12px;
     font-weight: 600;
     text-transform: uppercase;
@@ -170,7 +103,7 @@
     border: 1px solid #d42f2f;
 }
 
-/* --- Elegant Connection Handles --- */
+
 .handle {
     width: 10px !important;
     height: 10px !important;
@@ -198,5 +131,5 @@
     font-size: 0.8rem;
     font-weight: 700;
     border: 2px solid #121216;
-    /* Same as the canvas background for a "cutout" look */
+    
 }
