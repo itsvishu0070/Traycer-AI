@@ -17,7 +17,7 @@ const ChatPanel: React.FC<ChatPanelProps> = ({
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Scroll to top when new plan loads
+   
     if (scrollRef.current) {
       scrollRef.current.scrollTop = 0;
     }
@@ -26,14 +26,14 @@ const ChatPanel: React.FC<ChatPanelProps> = ({
   return (
     <div className={styles.chatPanel}>
       <div className={styles.planSteps} ref={scrollRef}>
-        {/* If there is no plan yet AND it's not loading, show the placeholder */}
+       
         {!planData && !isLoading && (
           <div className={styles.placeholder}>
             <p>Your generated plan will appear here.</p>
           </div>
         )}
 
-        {/* If there IS a plan, show the steps */}
+     
         {planData && (
           <>
             <h2 className={styles.title}>Plan Steps</h2>
@@ -45,7 +45,7 @@ const ChatPanel: React.FC<ChatPanelProps> = ({
           </>
         )}
 
-        {/* If it is loading, show a thinking message */}
+       
         {isLoading && (
           <div className={styles.loading}>
             <p> Thinking...</p>
